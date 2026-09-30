@@ -1,0 +1,103 @@
+# ============================================================
+# Unity 6.x - Dissonance Portfolio Repository
+# Code-only repository
+# ============================================================
+
+# ------------------------------------------------------------
+# Unity generated folders
+# ------------------------------------------------------------
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+ProfilerCaptures/
+.utmp/
+
+# ------------------------------------------------------------
+# Unity generated files
+# ------------------------------------------------------------
+
+*.log
+*.tmp
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+mono_crash.*
+
+# ------------------------------------------------------------
+# IDE files
+# ------------------------------------------------------------
+
+.vs/
+.idea/
+.vscode/
+
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.DotSettings.user
+
+# ------------------------------------------------------------
+# Build artifacts
+# ------------------------------------------------------------
+
+*.apk
+*.aab
+*.unitypackage
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Dissonance - Assets policy
+# ============================================================
+
+# Ignore everything inside Assets by default.
+Assets/*
+
+# Keep our source code.
+!Assets/Scripts/
+!Assets/Scripts/**
+
+# Keep the Unity metadata for our source code.
+!Assets/Scripts/**/*.meta
+
+# ============================================================
+# Explicitly excluded Unity/XR content
+# ============================================================
+
+Assets/Samples/
+Assets/VRTemplateAssets/
+Assets/XR/
+Assets/XRI/
+
+# Project-specific assets currently excluded.
+Assets/Animation/
+Assets/Audio/
+Assets/Effects/
+Assets/Materials/
+Assets/Models/
+Assets/Prefab/
+Assets/Recordings/
+Assets/Scenes/
+Assets/Settings/
+Assets/TextMesh Pro/
+Assets/Textures/
+Assets/Timelines/
