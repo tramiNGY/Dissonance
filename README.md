@@ -1,5 +1,9 @@
 # Dissonance
 
+<p align="center">
+  <img src="Docs/Images/Dissonance_Banner.png" alt="Dissonance_Banner" width="800"/>
+</p>
+
 **Interactive VR short film for Meta Quest 3 using Unity 6, combining cinematic sequences with hand-tracked, roomscale interactions and real-world player movement between seated and standing experiences.**
 
 ## Overview
@@ -32,6 +36,10 @@ The story, characters and dialogues were entirely written for the project, with 
 
 **TransitionManager** handles scene transitions using fade-in and fade-out effects.
 
+<p align="center">
+  <img src="Docs/Images/Dissonance_Timeline.png" alt="Timeline" width="1000"/>
+</p>
+
 ### Interaction System
 **InteractionHandler** is placed on interactable objects. It detects the player's interactions and sends them to the InteractionSystem.
 
@@ -41,13 +49,43 @@ The story, characters and dialogues were entirely written for the project, with 
 **InteractionHandler** defines several custom interaction types for each interactable object based on XR Interaction Toolkit and Unity methods.
 
 **InteractionMovement** applies movement behaviors to interactables for specific interactions.
-| Interaction | Description |
-|---|---|
-| **Press** | The player points at an interactable. The Press movement then moves the object in the direction of the poke interaction, with a linear back and forth movement along an axis. |
-| **Grab** | The player grabs an object, which is then held at an attach point. A Pivot movement can also be configured around a rotation axis, allowing the interactable to rotate according to the movement of the player's hand around the pivot. |
-| **Hover** | The player selects an interactable using near detection. A minimum hover duration is set to make sure the player has not accidentally chosen an object. |
-| **Zone** | The player or other interactable enters a trigger zone, detected using a specific Zone tag. |
-| **LookAt** | The player's camera looks at an interactable within a defined viewing angle. The system compares the forward direction of the camera with the direction toward the interactable. |
+
+<table>
+  <tr align="center">
+    <th>Interaction</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td> Press <br> <img src="Docs/Images/Dissonance_PressGIF.gif" alt="PressGIF" width="100"/> 
+    </td>
+    <td>The player points at an interactable. The Press movement then moves the object in the direction of the poke interaction, with a linear back and forth movement along an axis.
+    </td>
+  </tr>
+  <tr>
+    <td> Grab <br> <img src="Docs/Images/Dissonance_GrabGIF.gif" alt="GrabGIF" width="100"/>
+    </td>
+    <td>The player grabs an object, which is then held at an attach point. A Pivot movement can also be configured around a rotation axis, allowing the interactable to rotate according to the movement of the player's hand around the pivot.
+    </td>
+  </tr>
+  <tr>
+    <td> Hover <br> <img src="Docs/Images/Dissonance_HoverGIF.gif" alt="HoverGIF" width="100"/>
+    </td>
+    <td>The player selects an interactable using near detection. A minimum hover duration is set to make sure the player has not accidentally chosen an object.
+    </td>
+  </tr>
+  <tr>
+    <td> Zone <br> <img src="Docs/Images/Dissonance_ZoneGIF.gif" alt="ZoneGIF" width="100"/>
+    </td>
+    <td>The player or other interactable enters a trigger zone, detected using a specific Zone tag.
+    </td>
+  </tr>
+  <tr>
+    <td> LookAt <br> <img src="Docs/Images/Dissonance_LookAtGIF.gif" alt="LookAtGIF" width="100"/>
+    </td>
+    <td>The player's camera looks at an interactable within a defined viewing angle. The system compares the forward direction of the camera with the direction toward the interactable.
+    </td>
+  </tr>
+</table>
 
 ### Spatial Teleport and Roomscale
 The experience uses the player's real-world position and orientation as part of the interaction system. The first and last interactions of each Timeline are positioned to match the next scene so the player remains at the same physical position during scene transitions.
@@ -59,6 +97,10 @@ Scene Layouts are arranged to fit the actual Roomscale space. Scene objects are 
 Virtual seating or standing positions correspond to the player's physical positions. Virtual seats are always aligned with the real-world chair. The player can then stand and walk around the chair in the roomscale space before being guided back to the chair to sit down.
 
 **InteractionTeleport** repositions the player at different points within the same scene. This creates visual continuity of walking through the environment by moving between teleport checkpoints. It also routes the player through accessible roomscale space when turning corners or returning to desired points, such as the chair, without reaching the physical space boundaries.
+
+<p align="center">
+  <img src="Docs/Images/Dissonance_PlayAreaGIF.gif" alt="Dissonance_PlayAreaGIF" width=300/>
+</p>
 
 ### Audio System and Ambisonic Sound
 **SceneAudio** can be called by Timeline Signals to play, stop or crossfade audio clips for ambient sounds or music in a scene. It also activates the player's movement sound while walking in certain areas.
@@ -73,7 +115,7 @@ Virtual seating or standing positions correspond to the player's physical positi
 The Architecture is organized around two main flows: the Narrative Flow and the Interactive Flow connecting the Timeline and the Player through signals - - - >.
 
 <p align="center">
-<img src="Docs/Images/Dissonance_Architecture_Diagram.png" alt="Dissonance Architecture" width="600"/>
+  <img src="Docs/Images/Dissonance_Architecture_Diagram.png" alt="Dissonance Architecture" width="600"/>
 </p>
 
 ### Performance & Optimization
@@ -87,7 +129,53 @@ The Architecture is organized around two main flows: the Narrative Flow and the 
 | **Result** | The experience maintains an average frame time of 13-14 ms on Meta Quest 3, reaching approximately **72 FPS**.
 
 ## Technologies & Tools
-Unity | C# | Blender | GitHub | Jira | Reaper | KikiVoice | Photopea | Mixamo | WriterDuet | Google Sheets
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Docs/Images/Logo_Unity6.png" height="50"/><br>
+      Unity 6
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Github.png" height="50"/><br>
+      GitHub
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Blender.png" height="50"/><br>
+      Blender
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Photopea.png" height="50"/><br>
+      Photopea
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Mixamo.png" height="50"/><br>
+      Mixamo
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/Images/Logo_Reaper.png" height="50"/><br>
+      Reaper
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Kikivoice.png" height="50"/><br>
+      KikiVoice
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_WriterDuet.png" height="50"/><br>
+      WriterDuet
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_Jira.png" height="50"/><br>
+      Jira
+    </td>
+    <td align="center">
+      <img src="Docs/Images/Logo_GoogleSheets.png" height="50"/><br>
+      Google Sheets
+    </td>
+  </tr>
+</table>
+
 
 ## Build
 **Latest Release:** Dissonance_v1.0 - [Download the latest Meta Quest 3 build]()
@@ -100,7 +188,9 @@ Unity | C# | Blender | GitHub | Jira | Reaper | KikiVoice | Photopea | Mixamo | 
 - **Physical Setup:** A real chair is required for seated sequences. It must be centered along the back boundary of the play area, with a ~20 cm offset from the boundary.
 - **Duration:** 30~45min
 
-<img src="Docs/Images/Dissonance_PlayAreaSetup.png" alt="Dissonance Architecture" width="300"/>
+<p>
+  <img src="Docs/Images/Dissonance_PlayAreaSetup.png" alt="Dissonance Architecture" width="300"/>
+</p>
 
 
 
