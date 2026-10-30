@@ -4,7 +4,7 @@
   <img src="Docs/Images/Dissonance_Banner.png" alt="Dissonance_Banner" width="800"/>
 </p>
 
-**Interactive VR short film for Meta Quest 3 using Unity 6, combining cinematic sequences with hand-tracked, roomscale interactions and real-world player movement between seated and standing experiences.**
+**Interactive VR short film combining cinematic sequences with hand-tracked, roomscale interactions and real-world player movement between seated and standing experiences.**
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=ENeB2Gem6ow">
@@ -16,7 +16,7 @@
 </p>
 
 ## Overview
-**Engine** Unity |  **Platform** Meta Quest 3 | **XR** XR Interaction Toolkit | **Input** Hand Tracking / Controllers | **Development time** ~4 months | **Type** Solo Student Project
+**Engine** Unity 6 |  **Platform** Meta Quest 3 | **XR** XR Interaction Toolkit | **Input** Hand Tracking / Controllers | **Development time** ~4 months | **Type** Solo Student Project
 
 Dissonance is a single-player interactive short film in virtual reality intended for standalone Meta Quest 3.
 
@@ -192,12 +192,15 @@ The experience was tested on 8 users at different locations streamed by the head
   </tr>
 </table>
 
-
 ## Build
-**Latest Release:** Dissonance_v1.0 - [Download the latest Meta Quest 3 build]()
+**Latest Release:** Dissonance-v1.0.0 - [Download the latest version](https://github.com/tramiNGY/Dissonance/releases/tag/v1.0.0)
+
+**Note:** This VR experience has only been tested on Meta Quest 3 so far. Compatibility on other VR headsets has not yet been verified.
+
+If you have tested the experience on another headset, feedback would be greatly appreciated!
 
 ## Setup & Requirements
-- **Headset:** Meta Quest 3
+- **Headset:** Meta Quest 3 (compatible) or other headset (non-tested)
 - **Language:** French
 - **Play Area:** Minimum clear floor area of 3 m², with a slightly larger Roomscale boundary to allow head and hand movement beyond the playable floor area while keeping the player's feet within it.
 - **Interaction:** Hand Tracking recommended, controllers supported.
