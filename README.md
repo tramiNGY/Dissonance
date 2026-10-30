@@ -6,6 +6,15 @@
 
 **Interactive VR short film for Meta Quest 3 using Unity 6, combining cinematic sequences with hand-tracked, roomscale interactions and real-world player movement between seated and standing experiences.**
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ENeB2Gem6ow">
+    <img src="Docs/Images/Dissonance_Trailer_Thumbnail.png" width="200" alt="Trailer" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=UY1X0JWGJh4">
+    <img src="Docs/Images/Dissonance_Walkthrough_Thumbnail.png" width="200" alt="Walkthrough" />
+  </a>
+</p>
+
 ## Overview
 **Engine** Unity |  **Platform** Meta Quest 3 | **XR** XR Interaction Toolkit | **Input** Hand Tracking / Controllers | **Development time** ~4 months | **Type** Solo Student Project
 
@@ -99,7 +108,7 @@ Virtual seating or standing positions correspond to the player's physical positi
 **InteractionTeleport** repositions the player at different points within the same scene. This creates visual continuity of walking through the environment by moving between teleport checkpoints. It also routes the player through accessible roomscale space when turning corners or returning to desired points, such as the chair, without reaching the physical space boundaries.
 
 <p align="center">
-  <img src="Docs/Images/Dissonance_PlayAreaGIF.gif" alt="Dissonance_PlayAreaGIF" width=300/>
+  <img src="Docs/Images/Dissonance_PlayAreaGIF.gif" alt="Dissonance_PlayAreaGIF" width="300"/>
 </p>
 
 ### Audio System and Ambisonic Sound
