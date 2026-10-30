@@ -127,7 +127,8 @@ The Architecture is organized around two main flows: the Narrative Flow and the 
   <img src="Docs/Images/Dissonance_Architecture_Diagram.png" alt="Dissonance Architecture" width="600"/>
 </p>
 
-### Performance & Optimization
+### Performance & Improvements
+**Performance**
 | Step | Description |
 |---|---|
 | **Problem** | Frame drops causing visible stuttering during the experience. |
@@ -136,6 +137,12 @@ The Architecture is organized around two main flows: the Narrative Flow and the 
 | **Root Cause** | Large audio files were being loaded and decompressed, causing performance spikes during runtime. |
 | **Final Solution** | Long audio clips (> 7 MB) were switched to `Streaming` Load Type instead of `Decompress on Load`, avoiding loading the entire file into memory at once and consuming excessive RAM. |
 | **Result** | The experience maintains an average frame time of 13-14 ms on Meta Quest 3, reaching approximately **72 FPS**.
+
+**Improvements**
+
+The experience was tested on 8 users at different locations streamed by the headset's mirror mode showing the user's view. Physical movement and interaction gestures were followed and help was given when needed. A follow-up feedback permitted to get overall impressions and troubleshoot the issues encountered to improve the experience.
+
+[Read the feedbacks and improvements](Docs/Dissonance_Users_Feedbacks_Improvements.pdf)
 
 ## Technologies & Tools
 <table align="center">
